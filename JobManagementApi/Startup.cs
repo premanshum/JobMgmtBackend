@@ -1,4 +1,4 @@
-using JobManagementApi.Authentication;
+using JobManagementApi.Infrastructure.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,6 +55,14 @@ namespace JobManagementApi
                     ValidIssuer = Configuration["JWT:ValidIssuer"],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
                 };
+            });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Job", policy => policy.RequireClaim("Job"));
+                options.AddPolicy("JobCreate", policy => policy.RequireClaim("Job", "Create"));
+                options.AddPolicy("JobView", policy => policy.RequireClaim("Job", "View"));
+                options.AddPolicy("JobCancel", policy => policy.RequireClaim("Job", "Cancel"));
             });
         }
 

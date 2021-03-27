@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace JobManagementApi.Authentication
+namespace JobManagementApi.Infrastructure.Authentication
 {
     public class ApplicationUser : IdentityUser
     {

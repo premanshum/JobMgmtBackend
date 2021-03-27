@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobManagementApi", "JobManagementApi\JobManagementApi.csproj", "{E48DAD6B-4319-406F-8FAE-76990264586A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobManagementApi", "JobManagementApi\JobManagementApi.csproj", "{E48DAD6B-4319-406F-8FAE-76990264586A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobManagementApi.Infrastructure", "JobManagementApi.Infrastructure\JobManagementApi.Infrastructure.csproj", "{18078372-59A0-414C-AF4F-308929328F2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E48DAD6B-4319-406F-8FAE-76990264586A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E48DAD6B-4319-406F-8FAE-76990264586A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E48DAD6B-4319-406F-8FAE-76990264586A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18078372-59A0-414C-AF4F-308929328F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18078372-59A0-414C-AF4F-308929328F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18078372-59A0-414C-AF4F-308929328F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18078372-59A0-414C-AF4F-308929328F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

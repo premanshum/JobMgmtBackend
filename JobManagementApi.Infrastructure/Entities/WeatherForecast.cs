@@ -1,6 +1,6 @@
 using System;
 
-namespace JobManagementApi
+namespace JobManagementApi.Infrastructure.Entities
 {
 	public class WeatherForecast
 	{

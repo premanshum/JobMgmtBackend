@@ -1,4 +1,4 @@
-﻿namespace JobManagementApi.Authentication
+﻿namespace JobManagementApi.Infrastructure.Authentication
 {
     public static class UserRoles
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace JobManagementApi.Authentication
+namespace JobManagementApi.Infrastructure.Authentication
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

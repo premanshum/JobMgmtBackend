@@ -1,4 +1,4 @@
-﻿namespace JobManagementApi.Entities
+﻿namespace JobManagementApi.Infrastructure.Entities
 {
     public class LoginResponse
     {

@@ -1,5 +1,5 @@
-﻿using JobManagementApi.Authentication;
-using JobManagementApi.Entities;
+﻿using JobManagementApi.Infrastructure.Authentication;
+using JobManagementApi.Infrastructure.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
