@@ -1,4 +1,5 @@
-using JobManagementApi.Infrastructure.Authentication;
+using JobManagementApi.Data;
+using JobManagementApi.Infrastructure.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +28,8 @@ namespace JobManagementApi
             services.AddControllers();
 
             // For Entity Framework  
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
+            services.AddDbContext<ApplicationDbContext>
+                (options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
 
             // For Identity  
             services.AddIdentity<ApplicationUser, IdentityRole>()

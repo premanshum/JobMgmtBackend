@@ -25,29 +25,25 @@ namespace JobManagementApi.Controllers
 				{
 					CustomerName = "Jesse",
 					JobId = "110",
-					Phone = "988770020",
-					Status = "Pending"
+					CustomerPhone = "988770020"
 				},
 				new Job
 				{
 					CustomerName = "Badger",
 					JobId = "111",
-					Phone = "9850900020",
-					Status = "Started"
+					CustomerPhone = "9850900020"
 				},
 				new Job
 				{
 					CustomerName = "Skinny Pete",
 					JobId = "112",
-					Phone = "981129080",
-					Status = "Cancelled"
+					CustomerPhone = "981129080"
 				},
 				new Job
 				{
 					CustomerName = "Mojo",
 					JobId = "113",
-					Phone = "988770020",
-					Status = "Done"
+					CustomerPhone = "988770020"
 				}
 			};
 
